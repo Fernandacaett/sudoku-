@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
 .botao {
     padding: 10px 20px;
     font-size: 1.2em;
@@ -23,6 +24,7 @@ body {
     border-radius: 5px;
     transition: calc(.3s);
 }
+
 .botao:hover {
     color: white;
     background-color: #007cc9;
@@ -57,18 +59,6 @@ h1 {
     color: #007cc9;
 }
 
-.arrow { 
-    display: flex;
-    position: absolute;
-    left: 550px;
-    bottom: 690px;
-}
-
-.arrow a {
-    text-decoration: none;
-    color: #007cc9;
-}
-
 #sudoku-board {
     display: grid;
     grid-template-columns: repeat(9, 60px);
@@ -96,14 +86,13 @@ h1 {
 #sudoku-board input:focus {
     background-color: none;
 }
-/* Remove as setas do input type="number" no Chrome, Safari, Edge, Opera */
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Remove as setas do input type="number" no Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
@@ -120,7 +109,3 @@ input[type=number] {
 .cell:nth-child(n + 46):nth-child(-n + 54) {
     border-bottom: 2px solid #333;
 }
-
-
-
-

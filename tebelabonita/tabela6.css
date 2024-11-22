@@ -17,6 +17,7 @@
     background-color: white;
     border-bottom-color: hsl(0, 0%, 84%);
     border-top-width: 2px;
+    border-right-width: 2px;
 }
 
 #sudoku-board input[data-row="4"][data-col="6"] {
@@ -35,6 +36,7 @@
 #sudoku-board input[data-row="4"][data-col="8"] {
     background-color: white;
     border-bottom-color: hsl(0, 0%, 84%);
+    border-right-width: 2px;
 }
 
 #sudoku-board input[data-row="5"][data-col="6"] {
@@ -53,4 +55,5 @@
 #sudoku-board input[data-row="5"][data-col="8"] {
     background-color: white;
     border-bottom-width: 2px;
+    border-right-width: 2px;
 }

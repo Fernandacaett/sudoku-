@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/tebelabonita/tabela9.css">
     <title>Sudoku</title>
 </head>
+
 <body>
 <div class="conteudo">
   <a href="/paginas/niveis.html">
@@ -25,16 +26,16 @@
     <div id="sudoku-board"></div>
 
     <div class="button">
-      <button class="botao" onclick="checkSolution()">Verificar Solução</button>
+      <button class="botao" onclick="checkSolution()">Verificar onde está correto</button>
 
-      <button class="botao" onclick="resetBoard()">Reset</button>
+      <button class="botao" onclick="changeLevel(35)">Recomeçar o quadro</button>
     </div>
 </div>
   <script src="/javinha/sudoku.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      changeLevel(25);
+      changeLevel(35);
     });
   </script>
 

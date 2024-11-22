@@ -41,16 +41,19 @@
 
 #sudoku-board input[data-row="8"][data-col="3"] {
     background-color: white;
-    border-left-width: 2px;
     border-right-color: hsl(0, 0%, 84%);
+    border-left-width: 2px;
+    border-bottom-width: 2px;
 }
 
 #sudoku-board input[data-row="8"][data-col="4"] {
     background-color: white;
     border-right-color: hsl(0, 0%, 84%);
+    border-bottom-width: 2px;
 }
 
 #sudoku-board input[data-row="8"][data-col="5"] {
     background-color: white;
     border-right-width: 2px;
+    border-bottom-width: 2px;
 }
