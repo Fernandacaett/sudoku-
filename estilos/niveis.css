@@ -12,10 +12,11 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 20px; 
-    padding-top: 40px; 
+    padding-top: 40px;
     box-shadow: 0 4px 15px black;
     max-width: 300px;
     width: 100%;
+
 }
 
 .arrow { 
@@ -43,6 +44,7 @@ h1 {
     border: none;
     border-radius: 5px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .botao a {
@@ -58,7 +60,6 @@ h1 {
 .botao:active {
     transform: translateY(1px);
 }
-
 
 
 
