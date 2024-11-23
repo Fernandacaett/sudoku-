@@ -136,9 +136,3 @@ function resetBoard() {
 let solutionBoard = createFullBoard();
 let initialBoard = generateSudokuBoard(0);
 renderBoard(initialBoard);
-
-function timer() {
-    for(let i = 0; ; i++) {
-        console.log(i)
-    }
-}

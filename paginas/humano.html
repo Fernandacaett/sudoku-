@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/dificuldade.css">
-    <link rel="stylesheet" href="/estilos/dificuldade.css">
     <link rel="stylesheet" href="/tebelabonita/tabela1.css">
     <link rel="stylesheet" href="/tebelabonita/tabela2.css">
     <link rel="stylesheet" href="/tebelabonita/tabela3.css">
@@ -14,23 +13,24 @@
     <link rel="stylesheet" href="/tebelabonita/tabela7.css">
     <link rel="stylesheet" href="/tebelabonita/tabela8.css">  
     <link rel="stylesheet" href="/tebelabonita/tabela9.css">
+
     <title>Sudoku</title>
 </head>
-
 <body>
+
 <div class="conteudo">
-  <a href="/paginas/niveis.html">
-    <button class="botao-nivel">Médio</button>
-  </a>
+  <button class="botao-nivel">Médio</button>
 
     <div id="sudoku-board"></div>
 
     <div class="button">
+      <button class="botao"><a href="/paginas/niveis.html">Voltar</a></button>
       <button class="botao" onclick="checkSolution()">Verificar</button>
       <button class="botao" onclick="resetBoard()">Limpar</button>
-      <button class="botao" onclick="changeLevel(25)">Embaralhar</button>
+      <button class="botao" onclick="changeLevel(35)">Embaralhar</button>
     </div>
 </div>
+
   <script src="/javinha/sudoku.js"></script>
 
   <script>
@@ -40,4 +40,4 @@
   </script>
 
 </body>
-</html> 
+</html>
