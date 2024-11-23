@@ -130,7 +130,7 @@ function changeLevel(level) {
 
 function resetBoard() {
     initialBoard.input = ""
-    renderBoard(initialBoard)
+    renderBoard(initialBoard);
 }
 
 let solutionBoard = createFullBoard();
