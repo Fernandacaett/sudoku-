@@ -26,9 +26,9 @@
     <div id="sudoku-board"></div>
 
     <div class="button">
-      <button class="botao" onclick="checkSolution()">Verificar onde está correto</button>
-
-      <button class="botao" onclick="changeLevel(55)">Recomeçar o quadro</button>
+      <button class="botao" onclick="checkSolution()">Verificar</button>
+      <button class="botao" onclick="resetBoard()">Limpar</button>
+      <button class="botao" onclick="changeLevel(25)">Embaralhar</button>
     </div>
 </div>
 
@@ -36,7 +36,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      changeLevel(55);
+      changeLevel(45);
     });
   </script>
 

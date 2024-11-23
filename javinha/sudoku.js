@@ -129,9 +129,8 @@ function changeLevel(level) {
 }
 
 function resetBoard() {
-    let clean = document.getElementsByTagName("input.cell").namedItem
-    clean.name = ""
-    console.log(clean)
+    initialBoard.input = ""
+    renderBoard(initialBoard)
 }
 
 let solutionBoard = createFullBoard();
