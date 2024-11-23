@@ -130,9 +130,15 @@ function changeLevel(level) {
 
 function resetBoard() {
     initialBoard.input = ""
-    renderBoard(initialBoard);
+    renderBoard(initialBoard)
 }
 
 let solutionBoard = createFullBoard();
 let initialBoard = generateSudokuBoard(0);
 renderBoard(initialBoard);
+
+function timer() {
+    for(let i = 0; ; i++) {
+        console.log(i)
+    }
+}
