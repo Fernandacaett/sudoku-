@@ -10,15 +10,13 @@ body {
 }
 
 .conteudo {
-    background-color: white; 
-    border-radius: 10px; 
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
     gap: 30px;
     padding: 30px;
-    box-shadow: 0 4px 15px black; 
-    max-width: 400px; 
-    width: 100%; 
+    box-shadow: 0 4px 15px black;
+    max-width: 400px;
+    width: 100%;
 }
 
 h1 {
@@ -33,6 +31,10 @@ a {
     color: white;
 }
 
+a {
+    color: black;
+}
+
 .botao {
     background-color: #008be8;
     padding: 15px 30px;
@@ -41,6 +43,8 @@ a {
     border-radius: 8px;
     transition: calc(.3s);
     cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .botao:hover {
@@ -50,7 +54,4 @@ a {
 
 .botao:active {
     transform: translateY(1px);
-}
-a {
-    color: black;
 }

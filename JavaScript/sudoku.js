@@ -65,7 +65,7 @@ function renderBoard(board) {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             const cell = document.createElement("input");
-            cell.type = "number";
+            cell.type = "number" - "text";
             cell.min = 1;
             cell.max = 9;
             cell.classList.add("cell");
@@ -107,36 +107,32 @@ function checkSolution() {
 
         if (cell.getAttribute("data-predefined") !== "true") {
             if (value === solutionBoard[row][col]) {
-                cell.style.backgroundColor = "#ccffcc"; // Verde para valor correto
+                cell.style.backgroundColor = "#ccffcc";
             } else {
-                cell.style.backgroundColor = "#ffcccc"; // Vermelho para valor incorreto
-                isCorrect = false; // Marca como incorreto
+                cell.style.backgroundColor = "#ffcccc";
+                isCorrect = false;
             }
         }
     });
 
-    // Exibe mensagem com base no resultado
     if (isCorrect) {
         alert("Parabéns! Você completou o Sudoku corretamente!");
-        resetBoard();
+        changeLevel();
     } else {
-        alert("Existem erros no tabuleiro sua anta. Verifique as células em vermelho.");
+        alert("Existem erros no tabuleiro. Verifique as células em vermelho.");
     }
 }
 
-// Função para alterar o nível do jogo
 function changeLevel(level) {
     initialBoard = generateSudokuBoard(level);
     renderBoard(initialBoard);
 }
 
-// Função para resetar o tabuleiro com nova randomização
 function resetBoard() {
-    initialBoard = generateSudokuBoard(81);
+    initialBoard.input = ""
     renderBoard(initialBoard);
 }
 
-// Gera e exibe um tabuleiro inicial randomizado
-let solutionBoard = createFullBoard(); // Tabuleiro com solução completa
-let initialBoard = generateSudokuBoard(0); // Tabuleiro com células vazias
+let solutionBoard = createFullBoard();
+let initialBoard = generateSudokuBoard(0);
 renderBoard(initialBoard);
