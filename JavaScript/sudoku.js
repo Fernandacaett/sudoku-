@@ -117,7 +117,7 @@ function checkSolution() {
 
     if (isCorrect) {
         alert("Parabéns! Você completou o Sudoku corretamente!");
-
+        changeLevel();
     } else {
         alert("Existem erros no tabuleiro. Verifique as células em vermelho.");
     }

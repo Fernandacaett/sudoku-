@@ -11,11 +11,8 @@ body {
 
 .nomes {
     background-color: white; 
-    border-radius: 10px; 
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding: 30px;
+    border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 4px 15px black; 
     max-width: 450px; 
     width: 100%; 
@@ -28,10 +25,16 @@ h1 {
     text-shadow: 2px 2px grey; 
 }
 
-li {
-    color: #007cc9; 
+ul {
+    color: #007cc9;
     font-size: 1.5rem;
     list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0px;
 }
 
 .arrow { 
@@ -48,8 +51,4 @@ li {
 audio {
     background: none;
     margin: auto;
-}
-
-ul {
-    padding: 20px;
 }

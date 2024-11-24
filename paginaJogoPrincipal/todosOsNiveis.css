@@ -35,18 +35,6 @@ body {
     transform: translateY(1px);
 }
 
-.botao-nivel {
-    margin-bottom: 30px;
-    background: none;
-    border: none;
-    color: #007cc9;
-    font-size: 4.5rem;
-    font-weight: bold;
-    text-align: center;
-    cursor: default;
-    padding: 0;
-}
-
 .button {
     margin-top: 30px;
 }
@@ -63,8 +51,23 @@ a {
 }
 
 h1 {
-    font-size: 4.5rem;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    color: #007cc9;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    position: absolute;
+}
+
+.arrow a {
+    text-decoration: none;
     color: #007cc9;
 }
 
