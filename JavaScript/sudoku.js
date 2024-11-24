@@ -65,7 +65,7 @@ function renderBoard(board) {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             const cell = document.createElement("input");
-            cell.type = "number";
+            cell.type = "number" - "e";
             cell.min = 1;
             cell.max = 9;
             cell.classList.add("cell");
@@ -117,7 +117,7 @@ function checkSolution() {
 
     if (isCorrect) {
         alert("Parabéns! Você completou o Sudoku corretamente!");
-        resetBoard();
+
     } else {
         alert("Existem erros no tabuleiro. Verifique as células em vermelho.");
     }
